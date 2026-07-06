@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector Marabotto | Redes, Infraestructura & Dev</title>
+    <meta name="description" content="Portafolio de Hector Marabotto - Técnico en sistemas y estudiante de ingeniería. Especializado en redes, infraestructura y desarrollo web.">
+    
+    <link rel="icon" type="image/png" href="img/favicon.png"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css?v=5">
+</head>
+
+<body>
+
+    <div id="custom-cursor"></div>
+
+    <!-- Partículas flotantes de fondo -->
+    <div class="floating-particles" id="floating-particles"></div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Hector <span>Marabotto</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#sobremi" class="nav__link">Perfil</a></li>
+                    <li class="nav__item"><a href="#habilidades" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <canvas id="starfield"></canvas>
+            <canvas class="planet-container" id="earth-canvas"></canvas>
+            
+            <div class="container hero__content">
+                <span class="hero__subtitle" id="typewriter"></span>
+                <h1 class="hero__title">Hector Marabotto<br><span>Networks & Dev</span></h1>
+                <p class="hero__description">
+                    Diseño, implemento y aseguro infraestructuras de red. La programación es mi herramienta creativa para automatizar y construir soluciones a medida.
+                </p>
+                <div class="hero__buttons">
+                    <a href="assets/marabotto.pdf" download class="btn btn--primary"><i class="fas fa-download"></i> Descargar CV</a>
+                    <a href="#proyectos" class="btn btn--secondary">Ver Proyectos</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-indicator__line"></div>
+            </div>
+        </section>
+
+        <!-- Parallax fullwidth about section — ADIA style -->
+        <section id="sobremi" class="about-fullwidth">
+            <div class="about-parallax__bg"></div>
+            <div class="container">
+                <div class="about__container scroll-reveal">
+                    <div class="about__left-column">
+                        <div class="about__img-wrapper">
+                            <img src="img/perfil.png" alt="Hector Marabotto" class="about__img">
+                        </div>
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/hmarabotto" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/hmarabtto" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="mailto:marabtto@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="about__data">
+                        <h2 class="section__title">Redes & Infraestructura</h2>
+                        <p class="about__description">Técnico en sistemas y estudiante de ingeniería. Mi especialidad es diseñar, implementar y asegurar infraestructuras de red y ecosistemas digitales. La programación es una pasión personal que complementa mi perfil técnico — desarrollo web y automatización con Python por puro gusto.</p>
+                        <div class="about__stats">
+                            <div class="stat__item"><h3 data-count="3">+0</h3><p>Años</p></div>
+                            <div class="stat__item"><h3 data-count="15">+0</h3><p>Proyectos</p></div>
+                            <div class="stat__item"><h3>AI</h3><p>Ready</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section container">
+            <h2 class="section__title center scroll-reveal">Mi Tech Stack</h2>
+            <p class="section__subtitle center scroll-reveal">Herramientas y tecnologías que domino</p>
+            <div class="skills__grid">
+                <div class="skill-card scroll-reveal"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+                <div class="skill-card scroll-reveal"><i class="fas fa-server"></i><span>Infraestructura</span></div>
+                <div class="skill-card scroll-reveal"><i class="fas fa-shield-alt"></i><span>Ciberseguridad</span></div>
+                <div class="skill-card scroll-reveal"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-card scroll-reveal"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="skill-card scroll-reveal"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card scroll-reveal"><i class="fas fa-database"></i><span>SQL</span></div>
+                <div class="skill-card scroll-reveal"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects section container">
+            <h2 class="section__title center scroll-reveal">Proyecto Destacado</h2>
+            <p class="section__subtitle center scroll-reveal">Lo que construyo con pasión y código</p>
+            <div id="projects-container"></div>
+        </section>
+
+        <section id="certificaciones" class="section container">
+            <h2 class="section__title center scroll-reveal">Certificaciones</h2>
+            <p class="section__subtitle center scroll-reveal">Validaciones y credenciales profesionales</p>
+            <div class="cert-grid" id="certs-container"></div>
+        </section>
+
+        <section id="contacto" class="contact section container">
+            <h2 class="section__title center scroll-reveal">Conectemos</h2>
+            <p class="section__subtitle center scroll-reveal">¿Tienes algún proyecto en mente o quieres charlar?</p>
+            <div class="contact__container scroll-reveal">
+                <form id="contact-form" action="https://formspree.io/f/xwvnkzyo" method="POST" class="contact__form">
+                    <div class="input__group">
+                        <input type="text" name="name" placeholder="Tu Nombre" required class="contact__input">
+                        <input type="email" name="email" placeholder="Tu Email" required class="contact__input">
+                    </div>
+                    <textarea name="message" placeholder="Mensaje..." required class="contact__input contact__area"></textarea>
+                    <button type="submit" class="btn btn--primary full-width" id="form-btn">
+                        <span id="btn-text">Enviar <i class="fas fa-paper-plane"></i></span>
+                    </button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2026 Hector Marabotto. Powered by Human & AI.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=7"></script>
+</body>
+</html>
